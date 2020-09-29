@@ -774,6 +774,7 @@
 				"activities": [
 					{
 						"name": "Upload Person",
+						"description": "hfdhgfdhfd",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
