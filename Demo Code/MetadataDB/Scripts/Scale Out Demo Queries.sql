@@ -5,7 +5,10 @@ MODIFY
 	EDITION = 'Standard',
 	SERVICE_OBJECTIVE = 'S6', --800 concurrent requests
 	MAXSIZE = 50 GB
-	)
+	);
+
+SELECT * FROM sys.database_service_objectives
+
 
 --for demo
 SELECT * FROM [dbo].[Buckets];
@@ -18,7 +21,8 @@ EXEC [dbo].[SetBucketProcesses] @DebugMode = 1;
 
 TRUNCATE TABLE [dbo].[DataDump];
 
-SELECT [SomeValue]  FROM [dbo].[DataDump];
+SELECT COUNT(0) FROM [dbo].[DataDump];
+SELECT [SomeValue] FROM [dbo].[DataDump];
 
 
 --after demo
